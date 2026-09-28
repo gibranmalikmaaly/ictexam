@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCF Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <header class="text-center bg-blue-600 sticky-top-5">
+        <div class="mt-4 mb-5">
+            <h2 class="text-white font-bold text-2xl">Student Creativity Festival</h2>
+            <p class="text-white text-sm">It's Great Opportunity To Show Your Skills!</p>
+        </div>
+    </header>
+    <main>
+        <section>
+        <div class="text-left px-6 bg-gray-300 max-w-xl rounded-xl shadow-md mx-auto max-w-4xl px-4 py-6 flex-grow ">
+            <h3 class="text-white font-bold text-center text-lg pb-3">Fill Registrations Below</h3>
+            <form action="#" method="post">
+                <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Your full name">
+                </div>
+
+                <div>
+                <label for="class">Class</label>
+                <select id="class" name="class">
+                    <option value="">Which grade you are?</option>
+                    <option value="X">X</option>
+                    <option value="XI">XI</option>
+                    <option value="XII">XII</option>
+                </select>
+                </div>
+
+                <div>
+                <p>Gender</p>
+                <input type="radio" id="Male" name="gender" value="Male" required/>
+                <label for="gender">Male</label> <br>
+                <input type="radio" id="Female" name="gender" value="Female" required/>
+                <label for="gender">Female</label>
+                </div>
+
+                <div>
+                <label for="competition category">Competition Category</label>
+                <select>
+                    <option value="">Show us your skill!</option>
+                    <option value="web development">Web Development</option>
+                    <option value="iot project">IoT Project</option>
+                    <option value="graphic design">Graphic Design</option>
+                    <option value="public speaking">Public Speaking</option>
+                    <option value="photography">Photography</option>
+                </select>
+                </div>
+
+                <div>
+                <p>Participation Type</p>
+                <input type="radio" id="Individual" name="participation type" value="Individual" required/>
+                <label for="gender">Individual</label> <br>
+                <input type="radio" id="Team" name="participation type" value="Team" required/>
+                <label for="gender">Team</label>
+                </div>
+
+                <div>
+                <label for="team name">Team Name</label>
+                <input type="text" placeholder="Find a memorable one!">
+                </div>
+
+                <div>
+                <label for="phone number">Phone Number</label>
+                <input type="number" placeholder="08xxxxxxxx">
+                </div>
+
+                <div>
+                <label for="project description">Project Description</label>
+                <textarea placeholder="Describe your project"></textarea>
+                </div>
+
+                <button type="register" id="register" class="bg-red-500 rounded-md hover:bg-red-400 transition-colors shadow">Register Now</button>
+            </form>
+        </div>
+        </section>
+
+        <section>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Participant</th>
+                <th>Class</th>
+                <th>Category</th>
+                <th>Team</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Julius Caesar</th>
+                <th>XI</th>
+                <th>Web Development</th>
+                <th>Rome Empire</th>
+                <th>Registered</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Genghis Khan</th>
+                <th>XII</th>
+                <th>Graphic Design</th>
+                <th>Mongol Horde</th>
+                <th>Pending</th>
+            </tr>
+        </table>
+        </section>
+    </main>
+</body>
+</html>
